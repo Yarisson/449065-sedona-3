@@ -7,3 +7,37 @@
   padding: 0;
   border: 1px solid royalblue;
 }
+
+@media (min-width: @tablet-width) {
+  .photogallery-list {
+    width: 648px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .photogallery-list__unit {
+    width: 50%;
+  }
+
+  .photogallery-list__unit--big {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photogallery-list {
+    width: 100%;
+    margin: 0;
+  }
+
+  .photogallery-list__unit {
+    width: 33%;
+  }
+
+  .photogallery-list__unit--big {
+    width: 100%;
+  }
+}

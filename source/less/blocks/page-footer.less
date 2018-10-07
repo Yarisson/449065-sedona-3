@@ -1,4 +1,6 @@
 .page-footer {
+  width: 320px;
+  height: 245px;
   background-color: @footer-color;
   color: #000000;
   text-transform: uppercase;
@@ -15,4 +17,20 @@
 
 .page-footer__copyright-text {
   font-size: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 768px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1200px;
+  }
 }

@@ -3,7 +3,7 @@
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 56px;
+  margin-bottom: 0;
   padding: 0;
   border: 1px solid salmon;
 }
@@ -11,6 +11,7 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   color: #ffffff;
   font-size: 18px;
   line-height: 40px;
@@ -25,4 +26,19 @@
   padding-right: 0;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: transparent;
+    color: #000000;
+  }
 }

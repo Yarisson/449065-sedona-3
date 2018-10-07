@@ -1,6 +1,44 @@
 .page-header {
+  width: 320px;
+  height: 280px;
   margin: 0;
   padding: 0;
+  margin-bottom: 0;
   background-color: #ffffff;
   border: 1px solid green;
+}
+
+.page-header__button {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.page-header__button--toggler {
+  background-image: url("../img/icon-burger.svg");
+  left: 280px;
+  top: 240px;
+}
+
+.page-header__button--cross {
+  background-image: url("../img/icon-cross.svg");
+  left: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+    height: 57px;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
 }
