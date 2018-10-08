@@ -1,11 +1,16 @@
 .tourist {
-  background-color: #ffffff;
-  color: #000000;
-  text-transform: uppercase;
-  font-style: normal;
+  background-color: @white-color;
+  color: @black-color;
   margin: 0;
   padding: 0;
-  border: 1px solid blueviolet;
+  box-shadow: 0 0 1px 1px blueviolet;
+}
+
+.tourist__wrapper {
+  min-width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .tourist__list {
@@ -13,19 +18,20 @@
 }
 
 .tourist__caption {
+  .font-caption();
   font-size: 16px;
   line-height: 20px;
-  font-weight: bold;
 }
 
 .tourist__text {
+  .font-text();
   font-size: 14px;
   line-height: 28px;
 }
 
 @media (min-width: @tablet-width) {
   .tourist__wrapper {
-    width: 100%;
+    min-width: 768px;
     height: 330px;
   }
 
@@ -40,5 +46,11 @@
 
   .tourist__item {
     width: 33%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tourist__wrapper {
+    min-width: 1200px;
   }
 }
