@@ -1,6 +1,43 @@
 .page-header {
+  width: 100%;
+  height: 280px;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  border: 1px solid green;
+  background-color: @white-color;
+  box-shadow: 0 0 1px 1px green;
+}
+
+.page-header__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header__button {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.page-header__button--toggler {
+  background-image: url("../img/icon-burger.svg");
+  left: 280px;
+  top: 240px;
+}
+
+.page-header__button--cross {
+  background-image: url("../img/icon-cross.svg");
+  left: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 100%;
+    height: 57px;
+  }
+
+  .page-header__button {
+    display: none;
+  }
 }

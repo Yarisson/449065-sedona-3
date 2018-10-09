@@ -1,20 +1,48 @@
 .tourist {
-  background-color: #ffffff;
-  color: #000000;
-  text-transform: uppercase;
-  font-style: normal;
+  background-color: @white-color;
+  color: @black-color;
   margin: 0;
   padding: 0;
-  border: 1px solid blueviolet;
+  box-shadow: 0 0 1px 1px blueviolet;
+}
+
+.tourist__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.tourist__list {
+  list-style-type: none;
 }
 
 .tourist__caption {
+  .font-caption();
   font-size: 16px;
   line-height: 20px;
-  font-weight: bold;
 }
 
 .tourist__text {
+  .font-text();
   font-size: 14px;
   line-height: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .tourist__wrapper {
+    height: 330px;
+  }
+
+  .tourist__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tourist__item {
+    width: 33%;
+  }
 }

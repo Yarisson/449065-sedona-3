@@ -1,5 +1,5 @@
 .main-banner {
-  width: 320px;
+  width: 100%;
   height: 390px;
   margin-top: 0;
   margin-left: 0;
@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  border: 1px solid orangered;
+  box-shadow: 0 0 1px 1px orangered;
 }
 
 .main-banner--photo {
@@ -27,4 +27,18 @@
   background-position: bottom;
   background-repeat: no-repeat;
   height: 390px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-banner {
+    width: 100%;
+    height: 518px;
+    margin-top: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-banner {
+    width: 100%;
+  }
 }

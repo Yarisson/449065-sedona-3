@@ -1,3 +1,22 @@
 .social {
   background-color: @footer-color;
 }
+
+.social__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
