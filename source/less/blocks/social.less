@@ -3,7 +3,6 @@
 }
 
 .social__wrapper {
-  min-width: 320px;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -11,22 +10,13 @@
 
 .social__list {
   list-style-type: none;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
-  .social__wrapper {
-    min-width: 256px;
-  }
-
   .social__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .social__wrapper {
-    max-width: 400px;
   }
 }

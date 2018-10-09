@@ -7,14 +7,11 @@
 }
 
 .main-reason__wrapper {
-  min-width: 320px;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
 }
 
 .main-reason__wrapper-row {
-  min-width: 320px;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -74,10 +71,11 @@
   }
 
   .main-reason__wrapper-row {
-    min-width: 768px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 0;
+    padding: 0;
   }
 
   .main-reason__image {
@@ -87,13 +85,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-reason__wrapper-row {
+    width: 1200px;
+  }
+
   .main-reason__decoration {
     box-shadow: 0 0 1px 1px firebrick;
     width: 33%;
-  }
-
-  .main-reason__wrapper-row {
-    min-width: 1200px;
   }
 
   .main-reason__decoration--color {
