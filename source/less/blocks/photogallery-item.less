@@ -6,16 +6,24 @@
 .photogallery-item__wrapper {
   text-align: center;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .photogallery-item__caption {
+  margin-top: 12px;
+  margin-bottom: 0;
+  text-align: left;
   .font-caption();
   font-size: 14px;
   line-height: 22px;
 }
 
 .photogallery-item__author {
+  margin: 0;
+  text-align: left;
   .font-text();
   text-transform: none;
   font-size: 14px;
@@ -23,12 +31,71 @@
 }
 
 .photogallery-item__like-text {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 40px;
+  text-align: left;
   .font-caption();
   font-size: 14px;
   line-height: 22px;
 }
 
+.photogallery-item__like-icon::before {
+  position: absolute;
+  width: 23px;
+  height: 20px;
+  top: -2px;
+  left: -40px;
+  display: block;
+  content: "";
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100%;
+}
+
+.photogallery-item__image-wrapper {
+  width: 100%;
+}
+
+.photogallery-item__image {
+  width: 100%;
+}
+
 @media (min-width: @tablet-width) {
+  .photogallery-item {
+    background-color: @photogallery-color;
+  }
+
+  .photogallery-item__wrapper {
+    position: relative;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photogallery-item__caption {
+    margin-left: 20px;
+  }
+
+  .photogallery-item__author {
+    margin-left: 20px;
+  }
+
+  .photogallery-item__like-text {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    top: 295px;
+    left: 270px;
+  }
+
+  .photogallery-item__like-icon::before {
+    top: -2px;
+    left: -32px;
+  }
+
   .photogallery-item__image {
     width: 100%;
     height: 267px;
@@ -37,6 +104,49 @@
   .photogallery-item__image--big {
     height: 400px;
   }
+
+  .photogallery-item__like-text--big {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    top: 430px;
+    left: 595px;
+  }
 }
 
+@media (min-width: @desktop-width) {
+  .photogallery-item__wrapper {
+    padding: 0;
+  }
 
+  .photogallery-item__caption {
+    position: absolute;
+    bottom: 44px;
+    color: @white-color;
+  }
+
+  .photogallery-item__author {
+    position: absolute;
+    bottom: 20px;
+    color: @white-color;
+  }
+
+  .photogallery-item__like-text {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    color: @white-color;
+    top: 215px;
+    left: 350px;
+  }
+
+  .photogallery-item__like-icon::before {
+    top: -2px;
+    left: -35px;
+  }
+
+  .photogallery-item__like-text--big {
+    top: 350px;
+    left: 1150px;
+  }
+}
