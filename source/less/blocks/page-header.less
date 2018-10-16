@@ -16,6 +16,7 @@
 }
 
 .page-header__button {
+  display: none;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -26,16 +27,19 @@
 }
 
 .page-header__button--toggler {
+  display: block;
   background-image: url("../img/icon-menu.svg");
   color: @navigation-color;
   background-color: transparent;
-  top: 234px;
+  top: 17px;
+  z-index: 2;
 }
 
 .page-header__button--cross {
   background-image: url("../img/icon-cross.svg");
   background-color: transparent;
   top: 17px;
+  z-index: 2;
 }
 
 @media (min-width: @tablet-width) {
@@ -48,6 +52,14 @@
   }
 
   .page-header__button {
+    display: none;
+  }
+
+  .page-header__button--toggler {
+    display: none;
+  }
+
+  .page-header__button--cross {
     display: none;
   }
 }
