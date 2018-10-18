@@ -1,16 +1,18 @@
 .page-header {
   width: 100%;
-  height: 280px;
   margin: 0;
   padding: 0;
   background-color: @white-color;
-  box-shadow: 0 0 1px 1px green;
 }
 
 .page-header__wrapper {
+  position: relative;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 50px;
 }
 
 .page-header__button {
@@ -18,26 +20,44 @@
   height: 24px;
   position: absolute;
   background-repeat: no-repeat;
+  background-size: 100%;
+  right: 20px;
+  border: none;
 }
 
 .page-header__button--toggler {
-  background-image: url("../img/icon-burger.svg");
-  left: 280px;
-  top: 240px;
+  background-image: url("../img/icon-menu.svg");
+  color: @navigation-color;
+  background-color: transparent;
+  top: 17px;
+  z-index: 2;
 }
 
 .page-header__button--cross {
   background-image: url("../img/icon-cross.svg");
-  left: 280px;
+  background-color: transparent;
+  top: 17px;
+  z-index: 2;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     width: 100%;
-    height: 57px;
+  }
+
+  .page-header__wrapper {
+    padding: 0;
   }
 
   .page-header__button {
+    display: none;
+  }
+
+  .page-header__button--toggler {
+    display: none;
+  }
+
+  .page-header__button--cross {
     display: none;
   }
 }
