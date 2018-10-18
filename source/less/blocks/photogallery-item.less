@@ -12,6 +12,11 @@
   padding-right: 20px;
 }
 
+.photogallery-item__wrapper-content {
+  margin: 0;
+  padding: 0;
+}
+
 .photogallery-item__caption {
   margin-top: 12px;
   margin-bottom: 0;
@@ -56,6 +61,7 @@
 }
 
 .photogallery-item__image-wrapper {
+  font-size: 0;
   width: 100%;
 }
 
@@ -69,25 +75,31 @@
   }
 
   .photogallery-item__wrapper {
-    position: relative;
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
   }
 
-  .photogallery-item__caption {
-    margin-left: 20px;
+  .photogallery-item__wrapper-content {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .photogallery-item__author {
-    margin-left: 20px;
+  .photogallery-item__caption {
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: left;
+    .font-caption();
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .photogallery-item__like-text {
     position: absolute;
     margin: 0;
     text-align: center;
-    top: 295px;
+    top: 16px;
     left: 270px;
   }
 
@@ -106,28 +118,30 @@
   }
 
   .photogallery-item__like-text--big {
-    position: absolute;
-    margin: 0;
-    text-align: center;
-    top: 430px;
     left: 595px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photogallery-item__wrapper {
+    position: relative;
     padding: 0;
   }
 
-  .photogallery-item__caption {
+  .photogallery-item__wrapper-content {
+    box-sizing: border-box;
     position: absolute;
-    bottom: 44px;
+    width: 100%;
+    min-height: 80px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photogallery-item__caption {
     color: @white-color;
   }
 
   .photogallery-item__author {
-    position: absolute;
-    bottom: 20px;
     color: @white-color;
   }
 
@@ -136,17 +150,18 @@
     margin: 0;
     text-align: center;
     color: @white-color;
-    top: 215px;
-    left: 350px;
+    top: 27px;
+    left: 347px;
   }
 
   .photogallery-item__like-icon::before {
     top: -2px;
     left: -35px;
+    fill: @white-color;
   }
 
   .photogallery-item__like-text--big {
-    top: 350px;
-    left: 1150px;
+    top: 27px;
+    left: 1147px;
   }
 }

@@ -8,21 +8,19 @@
 
   var onButtonTogglerClick = function (evt) {
     evt.preventDefault();
-    mainNav.style.display = 'block';
-    headerButton.style.display = 'none';
-    buttonToggler.style.display = 'none';
+    mainNav.classList.remove('hidden');
+    buttonToggler.classList.add('.hidden');
+    buttonCross.classList.remove('hidden');
     buttonToggler.removeEventListener('click', onButtonTogglerClick);
-    buttonCross.style.display = 'block';
     buttonCross.addEventListener('click', onButtonCrossClick);
   }
 
   var onButtonCrossClick = function (evt) {
     evt.preventDefault();
-    mainNav.style.display = 'none';
-    headerButton.style.display = 'none';
-    buttonCross.style.display = 'none';
+    mainNav.classList.add('hidden');
+    buttonCross.classList.add('hidden');
     buttonCross.removeEventListener('click', onButtonCrossClick);
-    buttonToggler.style.display = 'block';
+    buttonToggler.classList.remove('.hidden');
     buttonToggler.addEventListener('click', onButtonTogglerClick);
   }
 

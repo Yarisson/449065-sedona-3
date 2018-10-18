@@ -1,11 +1,19 @@
 .main-nav {
-  display: none;
   background-color: @navigation-color;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
   padding: 0;
+}
+
+.main-nav__link:hover {
+  background-color: @social__link-hover;
+}
+
+.main-nav__link:active {
+  color: #88b6d1;
+  background-color: @social__link-down;
 }
 
 .main-nav__wrapper {
@@ -67,6 +75,15 @@
     border-bottom: none;
     box-shadow: none;
   }
+
+  .main-nav__link:hover {
+    color: @navigation-color;
+  }
+
+  .main-nav__link:active {
+    color: #dadada;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
