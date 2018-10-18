@@ -9,7 +9,7 @@
   var onButtonTogglerClick = function (evt) {
     evt.preventDefault();
     mainNav.classList.remove('hidden');
-    buttonToggler.classList.add('.hidden');
+    buttonToggler.classList.add('hidden');
     buttonCross.classList.remove('hidden');
     buttonToggler.removeEventListener('click', onButtonTogglerClick);
     buttonCross.addEventListener('click', onButtonCrossClick);
@@ -19,8 +19,8 @@
     evt.preventDefault();
     mainNav.classList.add('hidden');
     buttonCross.classList.add('hidden');
+    buttonToggler.classList.remove('hidden');
     buttonCross.removeEventListener('click', onButtonCrossClick);
-    buttonToggler.classList.remove('.hidden');
     buttonToggler.addEventListener('click', onButtonTogglerClick);
   }
 
