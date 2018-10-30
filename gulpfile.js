@@ -96,15 +96,14 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", function(done) {
-  run(
-    "clean",
-    "images",
-    "webp",
-    "copy",
-    "css",
-    "sprite",
-    "html",
-    done
-  );
-});
+gulp.task("build",
+gulp.series(
+"clean",
+"images",
+"webp",
+"copy",
+"css",
+"sprite",
+"html"
+)
+);
