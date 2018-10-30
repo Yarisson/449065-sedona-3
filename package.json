@@ -8,6 +8,7 @@
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
     "gulp": "4.0.x",
+    "gulp-clean": "^0.4.0",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^4.1.0",
@@ -25,9 +26,11 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "sprite": "gulp sprite && gulp html",
+    "images": "gulp images && gulp webp",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
-    "start": "gulp start"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "browserslist": [
     "last 2 versions",
@@ -44,5 +47,8 @@
   ],
   "engines": {
     "node": "8.12"
+  },
+  "dependencies": {
+    "del": "^3.0.0"
   }
 }
