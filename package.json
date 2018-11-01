@@ -30,7 +30,7 @@
     "images": "gulp images && gulp webp",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "start": "npm run build && gulp server"
   },
   "browserslist": [
     "last 2 versions",

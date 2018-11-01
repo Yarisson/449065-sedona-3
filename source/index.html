@@ -9,7 +9,7 @@
   <body>
 
     <div style="display: none">
-      <include src="source/img/sprite.svg">
+      <include src="build/img/sprite.svg">
     </div>
 
       <svg style="display: none">
@@ -37,21 +37,21 @@
 <div class="container">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <button class="page-header__button page-header__button--toggler" type="button"></button>
-        <button class="page-header__button page-header__button--cross hidden" type="button"></button>
+        <button class="page-header__button  page-header__button--toggler" type="button"></button>
+        <button class="page-header__button  page-header__button--cross hidden" type="button"></button>
 
         <nav class="main-nav hidden">
 
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--current">Главная</li>
+                <li class="main-nav__item  main-nav__item--current"><a class="main-nav__link">Главная</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
             </ul>
           </div>
         </nav>
-        <a class="page-header__logo logo" href="index.html">
+        <a class="page-header__logo logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -62,8 +62,8 @@
     </header>
     <main class="page-main">
 
-      <div class="main-banner main-banner--index">
-        <div class="main-banner__text main-banner__text--index">
+      <div class="main-banner  main-banner--index">
+        <div class="main-banner__text  main-banner__text--index">
         </div>
         <div class="main-banner__triangle">
         </div>
@@ -82,10 +82,10 @@
           </section>
 
           <section class="main-reason">
-            <div class="main-reason__wrapper main-reason__wrapper--triangle">
+            <div class="main-reason__wrapper  main-reason__wrapper--triangle">
               <div class="main-reason__triangle">
               </div>
-              <div class="main-reason__decoration main-reason__decoration--color main-reason__decoration--triangle">
+              <div class="main-reason__decoration  main-reason__decoration--color  main-reason__decoration--triangle">
 
                   <h2 class="main-reason__caption">Настоящий городок</h2>
                   <p class="main-reason__roster">— №1 —</p>
@@ -111,7 +111,7 @@
             <div class="tourist__wrapper">
               <ul class="tourist__list">
 
-              <li class="tourist__item tourist__icon tourist__icon--house">
+              <li class="tourist__item  tourist__item--house">
                 <h3 class="tourist__caption">Жилье</h3>
                 <p class="tourist__text">
                   Рекомендуем пожить в
@@ -120,7 +120,7 @@
                 </p>
               </li>
 
-              <li class="tourist__item tourist__icon tourist__icon--souvenirs">
+              <li class="tourist__item  tourist__item--souvenirs">
                 <h3 class="tourist__caption">Сувениры</h3>
                 <p class="tourist__text">
                   Не только китайского,
@@ -129,7 +129,7 @@
                 </p>
               </li>
 
-              <li class="tourist__item tourist__icon tourist__icon--food">
+              <li class="tourist__item  tourist__item--food">
                 <h3 class="tourist__caption">Еда</h3>
                 <p class="tourist__text">
                   Всегда заказывайте
@@ -145,7 +145,7 @@
             <section class="main-reason">
 
               <div class="main-reason__wrapper">
-                <div class="main-reason__decoration main-reason__decoration--color">
+                <div class="main-reason__decoration  main-reason__decoration--color">
                   <h2 class="main-reason__caption">Там есть мост дьявола</h2>
                   <p class="main-reason__roster">— №2 —</p>
                   <p class="main-reason__text">Да, по нему можно
@@ -153,7 +153,7 @@
                     конечно</p>
                   </div>
                 </div>
-                <div class="main-reason__image-wrapper main-reason__image-wrapper--position">
+                <div class="main-reason__image-wrapper  main-reason__image-wrapper--position">
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
@@ -170,14 +170,14 @@
               <section class="main-reason">
 
                 <div class="main-reason__wrapper-row">
-                <div class="main-reason__decoration main-reason__decoration--line">
+                <div class="main-reason__decoration  main-reason__decoration--line">
                     <h2 class="main-reason__caption">Небольшая площадь</h2>
                     <p class="main-reason__roster">- №3 -</p>
                     <p class="main-reason__text">Все интересные места
                       находятся очень близко</p>
                     </div>
 
-                <div class="main-reason__decoration main-reason__decoration--line">
+                <div class="main-reason__decoration  main-reason__decoration--line">
                     <h2 class="main-reason__caption">Красивая дорога</h2>
                     <p class="main-reason__roster">- №4 -</p>
                     <p class="main-reason__text">Ехать в Седону из
@@ -185,7 +185,7 @@
                       не скучно!</p>
                     </div>
 
-                <div class="main-reason__decoration main-reason__decoration--line">
+                <div class="main-reason__decoration  main-reason__decoration--line">
                     <h2 class="main-reason__caption">Мало туристов</h2>
                     <p class="main-reason__roster">- №5 -</p>
                     <p class="main-reason__text">Большинство едет в
@@ -217,17 +217,17 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <a class="social__link  social__link--twitter" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <use xlink:href="#twitter-footer"></use>
             </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+            <a class="social__link  social__link--facebook" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
               <use xlink:href="#facebook-footer"></use>
             </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+            <a class="social__link  social__link--youtube" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
               <use xlink:href="#youtube-footer"></use>
             </svg>
             </a>

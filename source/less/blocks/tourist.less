@@ -36,7 +36,7 @@
   margin-bottom: 0;
 }
 
-.tourist__icon--souvenirs::before {
+.tourist__item--souvenirs::before {
   position: absolute;
   width: 33px;
   height: 39px;
@@ -50,7 +50,7 @@
   background-size: 100%;
 }
 
-.tourist__icon--house::before {
+.tourist__item--house::before {
   position: absolute;
   width: 39px;
   height: 37px;
@@ -64,7 +64,7 @@
   background-size: 100%;
 }
 
-.tourist__icon--food::before {
+.tourist__item--food::before {
   position: absolute;
   width: 38px;
   height: 35px;
@@ -93,7 +93,7 @@
   text-align: left;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
   .tourist__wrapper {
     padding: 0;
   }
@@ -125,25 +125,25 @@
     text-align: center;
   }
 
-  .tourist__icon--souvenirs {
+  .tourist__item--souvenirs {
     order: 2;
   }
 
-  .tourist__icon--souvenirs::before {
+  .tourist__item--souvenirs::before {
     width: 64px;
     height: 76px;
     top: -105px;
     left: 30%;
   }
 
-  .tourist__icon--house::before {
+  .tourist__item--house::before {
     width: 76px;
     height: 74px;
     top: -100px;
     left: 26%;
   }
 
-  .tourist__icon--food::before {
+  .tourist__item--food::before {
     width: 77px;
     height: 70px;
     top: -100px;
@@ -151,26 +151,26 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
   .tourist__item {
     margin-bottom: 85px;
   }
 
-  .tourist__icon--souvenirs::before {
+  .tourist__item--souvenirs::before {
     width: 64px;
     height: 76px;
     top: -105px;
     left: 120px;
   }
 
-  .tourist__icon--house::before {
+  .tourist__item--house::before {
     width: 76px;
     height: 74px;
     top: -100px;
     left: 115px;
   }
 
-  .tourist__icon--food::before {
+  .tourist__item--food::before {
     width: 77px;
     height: 70px;
     top: -100px;

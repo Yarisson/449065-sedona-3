@@ -78,8 +78,7 @@
 }
 
 .main-reason__decoration {
-  padding-top: 25px;
-  padding-bottom: 30px;
+  .main-reason-decoration();
 }
 
 .main-reason__decoration--triangle {
@@ -96,7 +95,7 @@
   background-color: @navigation-color;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
   .main-reason {
     width: 100%;
     display: flex;
@@ -146,7 +145,6 @@
   .main-reason__decoration {
     width: 100%;
     box-sizing: border-box;
-    .main-reason-wrapper();
   }
 
   .main-reason__decoration--color {
@@ -164,7 +162,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
   .main-reason__wrapper-row {
     width: 1200px;
   }
