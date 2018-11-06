@@ -174,6 +174,23 @@
                 скорее за билетами, пока они не
                 подорожали в очередной раз!</p>
             <div class="sedona-promo__video">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.jpg.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="sedona-promo__video-image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="видеопрезентация"/>
+              </picture>
+
+              <div class="sedona-promo__shadow">
+              </div>
+            </div>
+            <div class="sedona-promo__icons">
+                <button class="sedona-promo__icon-button" type="button"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="16" height="20"><use xlink:href="#icon-video-replay"></use></svg></button>
+                <button class="sedona-promo__icon-button" type="button"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="20"><use xlink:href="#icon-video-subtitles"></use></svg></button>
+                <button class="sedona-promo__icon-button" type="button"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><use xlink:href="#icon-video-fullscreen"></svg></button>
             </div>
           </div>
         </section>
