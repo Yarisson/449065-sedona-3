@@ -44,7 +44,8 @@
   content: "";
   width: 235px;
   height: 3px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: @white-color;
+  opacity: 0.2;
   top: 50%;
   left: 20px;
 }
@@ -90,6 +91,16 @@
   border: none;
   margin: 0 auto;
   padding: 0;
+}
+
+.sedona-promo__icon-button:hover {
+  fill: #333333;
+  stroke: #333333;
+}
+
+.sedona-promo__icon-button:active {
+  fill: #b8b8b8;
+  stroke: #b8b8b8;
 }
 
 .sedona-promo__icons button:first-child {
@@ -165,6 +176,17 @@
     border: none;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .sedona-promo__icon-button:hover {
+    fill: #c2c2c2;
+    stroke: #c2c2c2;
+  }
+
+  .sedona-promo__icon-button:active {
+    fill: #949494;
+    stroke: #949494;
+    border: none;
   }
 
   .sedona-promo__icons button:first-child {

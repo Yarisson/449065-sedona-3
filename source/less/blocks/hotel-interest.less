@@ -52,6 +52,16 @@
   height: 320px;
   margin: 0;
   padding: 0;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  z-index: 0;
+
+  @media @retina-media {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 100% auto;
+  }
 }
 
 .hotel-interest__map::before {
@@ -100,6 +110,12 @@
 
   .hotel-interest__map {
     height: 350px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media @retina-media {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 100% auto;
+    }
   }
 
   .hotel-interest__map::before {
@@ -109,6 +125,16 @@
 }
 
 @media @desktop-width {
+  .hotel-interest__map {
+    height: 350px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media @retina-media {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 100% auto;
+    }
+  }
+
   .hotel-interest__text {
     margin-left: 340px;
     margin-right: 340px;

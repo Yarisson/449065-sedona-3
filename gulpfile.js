@@ -62,7 +62,7 @@ gulp.task("webp", function() {
 });
 
 gulp.task("sprite", function() {
-  return gulp.src("build/img/icon-*.svg", "source/img/htmlacademy.svg")
+  return gulp.src("build/img/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))

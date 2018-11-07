@@ -19,6 +19,13 @@
 .main-reason-decoration() {
   padding-top: 25px;
   padding-bottom: 30px;
+
+  @media @tablet-width {
+    padding-top: 45px;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-bottom: 45px;
+  }
 }
 
 .page-header__wrapper() {
@@ -29,6 +36,10 @@
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 50px;
+
+  @media @tablet-width {
+    padding: 0;
+  }
 }
 
 .footer__wrapper() {
@@ -36,6 +47,20 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 35px;
+
+  @media @tablet-width {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+  }
+
+  @media @desktop-width {
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+  }
 }
 
 .photo-head__wrapper() {
@@ -43,6 +68,20 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 24px;
+
+  @media @tablet-width {
+    padding-top: 77px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 68px;
+  }
+
+  @media @desktop-width {
+    padding-top: 115px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 75px;
+  }
 }
 
 .main-head__wrapper() {
@@ -52,62 +91,15 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 10px;
-}
 
-@media @tablet-width {
-  .main-reason-decoration() {
-    padding-top: 45px;
-    padding-left: 46px;
-    padding-right: 46px;
-    padding-bottom: 45px;
-  }
-
-  .page-header__wrapper() {
-    padding: 0;
-  }
-
-  .footer__wrapper() {
+  @media @tablet-width {
     padding-top: 50px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 50px;
   }
 
-  .photo-head__wrapper() {
-    padding-top: 77px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 68px;
-  }
-
-  .main-head__wrapper() {
-    padding-top: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 50px;
-  }
-}
-
-@media @desktop-width {
-  .footer__wrapper() {
-    padding-top: 50px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 50px;
-  }
-
-  .photo-head__wrapper() {
-    padding-top: 115px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 75px;
-  }
-
-  .page-header__wrapper() {
-    padding: 0;
-  }
-
-  .main-head__wrapper() {
+  @media @desktop-width {
     padding-left: 120px;
     padding-right: 120px;
   }
