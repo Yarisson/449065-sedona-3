@@ -110,79 +110,88 @@
           </fieldset>
 
           <fieldset class="form-review__details form-details">
-
-            <b class="form-details__caption">Ваше общее впечатление:</b>
-
             <div class="form-details__wrapper">
-              <p class="form-details__text">
-                <input class="form-details__radio" type="radio" name="impression" id="positive" placeholder="Скорее положительное" checked>
-                <label for="positive" class="form-details__label">
-                  Скорее положительное
-                </label>
-              </p>
 
-              <p class="form-details__text">
-                <input class="form-details__radio" type="radio" name="impression" id="negative" placeholder="Скорее отрицательное">
-                <label for="negative" class="form-details__label">
-                  Скорее отрицательное
-                </label>
-              </p>
+              <b class="form-details__caption">Ваше общее впечатление:</b>
 
-              <p class="form-details__text">
-                <input class="form-details__radio" type="radio" name="impression" id="nothing" placeholder="Затрудняюсь ответить">
-                <label for="nothing" class="form-details__label">
-                  Затрудняюсь ответить
-                </label>
-              </p>
+              <div class="form-details__radio-wrapper">
+                <p class="form-details__text">
+                  <input class="form-details__radio" type="radio" name="impression" id="positive" placeholder="Скорее положительное" checked>
+                  <label for="positive" class="form-details__label">
+                    Скорее положительное
+                  </label>
+                </p>
+
+                <p class="form-details__text">
+                  <input class="form-details__radio" type="radio" name="impression" id="negative" placeholder="Скорее отрицательное">
+                  <label for="negative" class="form-details__label">
+                    Скорее отрицательное
+                  </label>
+                </p>
+
+                <p class="form-details__text">
+                  <input class="form-details__radio" type="radio" name="impression" id="nothing" placeholder="Затрудняюсь ответить">
+                  <label for="nothing" class="form-details__label">
+                    Затрудняюсь ответить
+                  </label>
+                </p>
+              </div>
             </div>
 
           </fieldset>
 
           <fieldset class="form-review__places form-places">
 
-            <b class="form-places__caption">Посещенные достопримечательности:</b>
+            <div class="form-places__wrapper">
 
-            <div class="form-places__wrapper" >
+              <b class="form-places__caption">Посещенные достопримечательности:</b>
 
-              <p class="form-places__text">
-                <input class="form-places__checkbox" type="checkbox" id="diablo-bridge" name="places" placeholder="Мост Дьявола" checked>
-                <label class="form-places__label" for="diablo-bridge">
+              <div class="form-places__places-wrapper">
+
+                <p class="form-places__text">
+                  <input class="form-places__checkbox" type="checkbox" id="diablo-bridge" name="places" placeholder="Мост Дьявола" checked>
+                  <label class="form-places__label" for="diablo-bridge">
                     Мост Дьявола
-                </label>
-              </p>
+                  </label>
+                </p>
 
-              <p class="form-places__text">
-                <input class="form-places__checkbox" type="checkbox" id="mountain" name="places" placeholder="Гора-Колокол" checked>
-                <label class="form-places__label" for="mountain">
-                  Гора-Колокол
-                </label>
-              </p>
+                <p class="form-places__text">
+                  <input class="form-places__checkbox" type="checkbox" id="mountain" name="places" placeholder="Гора-Колокол" checked>
+                  <label class="form-places__label" for="mountain">
+                    Гора-Колокол
+                  </label>
+                </p>
 
-              <p class="form-places__text">
-                <input class="form-places__checkbox" type="checkbox" id="slide-park" name="places" placeholder="Слайд-парк" checked>
-                <label class="form-places__label" for="slide-park">
-                  Слайд-парк
-                </label>
-              </p>
+                <p class="form-places__text">
+                  <input class="form-places__checkbox" type="checkbox" id="slide-park" name="places" placeholder="Слайд-парк" checked>
+                  <label class="form-places__label" for="slide-park">
+                    Слайд-парк
+                  </label>
+                </p>
 
-              <p class="form-places__text">
-                <input class="form-places__checkbox" type="checkbox" id="red-cliff" name="places" placeholder="Красные скалы">
-                <label class="form-places__label" for="red-cliff">
-                  Красные скалы
-                </label>
-              </p>
+                <p class="form-places__text">
+                  <input class="form-places__checkbox" type="checkbox" id="red-cliff" name="places" placeholder="Красные скалы">
+                  <label class="form-places__label" for="red-cliff">
+                    Красные скалы
+                  </label>
+                </p>
 
+              </div>
             </div>
 
           </fieldset>
 
           <fieldset class="form-review__emotions emotions-form">
 
-            <b class="emotions-form__caption">Опишите свои эмоции:</b>
+            <div class="emotions-form__wrapper">
 
-            <textarea class="emotions-form__textarea" form="form-sedona" name="emotions" placeholder="подробное описание"
-              rows="" style="border: none">Опишите подробно все свои восторги
-            </textarea>
+              <b class="emotions-form__caption">Опишите свои эмоции:</b>
+
+              <textarea class="emotions-form__textarea" form="form-sedona" name="emotions" placeholder="подробное описание"
+              rows="">Опишите подробно все свои восторги
+              </textarea>
+
+            </div>
 
           </fieldset>
 
