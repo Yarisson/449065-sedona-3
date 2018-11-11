@@ -49,3 +49,36 @@
   color: @black-color;
   border: none;
 }
+
+.form-review__button {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 51px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 47px;
+  background-color: @white-color;
+}
+
+@media @tablet-width {
+  .form-review {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-review__name {
+    width: 50%;
+  }
+
+  .form-review__details {
+    width: 50%;
+    order: -1;
+  }
+
+  .form-review__button {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+  }
+}

@@ -37,4 +37,35 @@
   color: @black-color;
   background-color: @photogallery-color;
   border: none;
+  resize: none;
+}
+
+.emotions-form__textarea:hover {
+  background-color: @border-color;
+}
+
+.emotions-form__textarea:active {
+  background-color: @white-color;
+}
+
+.emotions-form__textarea:focus {
+  outline: 4px solid @border-color;
+}
+
+@media @tablet-width {
+  .emotions-form__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .emotions-form__caption {
+    font-size: 21px;
+  }
+
+  .emotions-form__textarea {
+    width: 100%;
+    height: 160px;
+    margin-top: 58px;
+  }
 }

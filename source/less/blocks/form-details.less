@@ -62,3 +62,48 @@
 .form-details__radio:checked + .form-details__label::after {
   display: block;
 }
+
+.form-details__text input:hover + .form-details__label::before {
+  background-color: @border-color;
+}
+
+.form-details__text input:active + .form-details__label::before {
+  background-color: #d5d5d5;
+}
+
+.form-details__text input:active + .form-details__label::after {
+  opacity: 0.3;
+}
+
+@media @tablet-width {
+  .form-details {
+    width: 50%;
+    border-top: none;
+  }
+
+  .form-details__caption {
+    font-size: 21px;
+  }
+
+  .form-details__text {
+    margin-top: 52px;
+  }
+
+  .form-details__text:first-of-type {
+    margin-top: 75px;
+  }
+
+  .form-details__wrapper {
+    position: relative;
+  }
+
+  .form-details__wrapper::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
+    top: 20px;
+    right: -45px;
+  }
+}
