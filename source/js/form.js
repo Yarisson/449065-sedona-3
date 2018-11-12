@@ -12,22 +12,22 @@ var inputLastName = document.querySelector('#last-name');
 
 var onButtonFormClick = function () {
   if (!inputTelephon.value || !inputEmail.value || !inputName.value || inputLastName.value) {
-    popupFailure.classList.remove(".popup-failure--hidden");
+    popupFailure.classList.remove("popup-failure--hidden");
     failureButton.addEventListener('click', onButtonFailureClick);
     console.log("Заполните поля формы");
   } else {
-    popupSucces.classList.remove(".popup-succes--hidden");
+    popupSucces.classList.remove("popup-succes--hidden");
     succesButton.addEventListener('click', onButtonSuccesClick);
   }
 }
 
 var onButtonFailureClick = function () {
-  popupFailure.classList.add(".popup-failure--hidden");
+  popupFailure.classList.add("popup-failure--hidden");
   failureButton.removeEventListener('click', onButtonFailureClick);
 }
 
 var onButtonSuccesClick = function () {
-  popupSucces.classList.add(".popup-succes--hidden");
+  popupSucces.classList.add("popup-succes--hidden");
   succesButton.removeEventListener('click', onButtonSuccesClick);
 }
 
