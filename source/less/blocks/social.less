@@ -34,18 +34,20 @@
 .social__link {
   box-sizing: border-box;
   display: inline-block;
-  color: @white-color;
   fill: @white-color;
   margin-left: 0;
 }
 
-.social__link:hover {
+.social__item:hover {
   background-color: @social__link-hover-color;
 }
 
-.social__link:active {
-  color: rgba(255, 255, 255, 0.3);
+.social__item:active {
   background-color: @social__link-down-color;
+}
+
+.social__link:active {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .social__link--twitter {

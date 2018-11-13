@@ -46,6 +46,26 @@
   background-color: @social__link-down-color;
 }
 
+.hotel-interest__map--background-hidden {
+  width: 100%;
+  height: 320px;
+  background-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  frameborder: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 1;
+}
+
+.hotel-interest__map-hidden {
+  display: none;
+}
+
 .hotel-interest__map {
   position: relative;
   width: 100%;
@@ -57,10 +77,6 @@
   background-position: center center;
   overflow: hidden;
   z-index: 0;
-
-  .hotel-interest__map iframe {
-    frameborder: 0;
-  }
 
   @media @retina-media {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -77,17 +93,10 @@
   left: 45%;
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: 0;
   color: #000000;
   background-color: transparent;
   background-size: 100%;
-}
-
-.hotel-interest__map iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  z-index: 1;
 }
 
 @media @tablet-width {
@@ -110,6 +119,10 @@
 
   .hotel-interest__button {
     padding: 20px 135px;
+  }
+
+  .hotel-interest__map--background-hidden {
+    height: 350px;
   }
 
   .hotel-interest__map {
