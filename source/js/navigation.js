@@ -4,6 +4,10 @@
   var headerButton = document.querySelector('.page-header__button');
   var mainNav = document.querySelector('.main-nav');
 
+  mainNav.classList.add('main-nav--hidden');
+  headerButton.classList.remove('page-header__button--cross');
+  headerButton.classList.add('page-header__button--toggler');
+
   var onHeaderButtonClick = function (evt) {
     evt.preventDefault();
     if (headerButton.classList.contains('page-header__button--toggler')) {
