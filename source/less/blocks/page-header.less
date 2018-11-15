@@ -6,13 +6,7 @@
 }
 
 .page-header__wrapper {
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 50px;
+  .page-header__wrapper();
 }
 
 .page-header__button {
@@ -23,41 +17,26 @@
   background-size: 100%;
   right: 20px;
   border: none;
+  background-color: transparent;
+  top: 17px;
+  z-index: 2;
 }
 
 .page-header__button--toggler {
   background-image: url("../img/icon-menu.svg");
   color: @navigation-color;
-  background-color: transparent;
-  top: 17px;
-  z-index: 2;
 }
 
 .page-header__button--cross {
   background-image: url("../img/icon-cross.svg");
-  background-color: transparent;
-  top: 17px;
-  z-index: 2;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
   .page-header {
     width: 100%;
   }
 
-  .page-header__wrapper {
-    padding: 0;
-  }
-
   .page-header__button {
-    display: none;
-  }
-
-  .page-header__button--toggler {
-    display: none;
-  }
-
-  .page-header__button--cross {
     display: none;
   }
 }

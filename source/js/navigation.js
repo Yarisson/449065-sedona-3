@@ -2,28 +2,25 @@
 
 (function () {
   var headerButton = document.querySelector('.page-header__button');
-  var buttonToggler = document.querySelector('.page-header__button--toggler');
-  var buttonCross = document.querySelector('.page-header__button--cross');
   var mainNav = document.querySelector('.main-nav');
 
-  var onButtonTogglerClick = function (evt) {
+  mainNav.classList.add('main-nav--hidden');
+  headerButton.classList.remove('page-header__button--cross');
+  headerButton.classList.add('page-header__button--toggler');
+
+  var onHeaderButtonClick = function (evt) {
     evt.preventDefault();
-    mainNav.classList.remove('hidden');
-    buttonToggler.classList.add('hidden');
-    buttonCross.classList.remove('hidden');
-    buttonToggler.removeEventListener('click', onButtonTogglerClick);
-    buttonCross.addEventListener('click', onButtonCrossClick);
+    if (headerButton.classList.contains('page-header__button--toggler')) {
+      mainNav.classList.remove('main-nav--hidden');
+      headerButton.classList.remove('page-header__button--toggler');
+      headerButton.classList.add('page-header__button--cross');
+    }
+    else {
+      mainNav.classList.add('main-nav--hidden');
+      headerButton.classList.remove('page-header__button--cross');
+      headerButton.classList.add('page-header__button--toggler');
+    }
   }
 
-  var onButtonCrossClick = function (evt) {
-    evt.preventDefault();
-    mainNav.classList.add('hidden');
-    buttonCross.classList.add('hidden');
-    buttonToggler.classList.remove('hidden');
-    buttonCross.removeEventListener('click', onButtonCrossClick);
-    buttonToggler.addEventListener('click', onButtonTogglerClick);
-  }
-
-  buttonToggler.addEventListener('click', onButtonTogglerClick);
-  buttonCross.addEventListener('click', onButtonCrossClick);
+  headerButton.addEventListener('click', onHeaderButtonClick);
 })();

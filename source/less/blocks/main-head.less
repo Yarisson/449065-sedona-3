@@ -6,12 +6,7 @@
 }
 
 .main-head__wrapper {
-  text-align: center;
-  margin: 0;
-  padding-top: 40px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 10px;
+  .main-head__wrapper();
 }
 
 .main-head__caption {
@@ -31,16 +26,9 @@
   line-height: 28px;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
   .main-head {
     width: 100%;
-  }
-
-  .main-head__wrapper {
-    padding-top: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 50px;
   }
 
   .main-head__caption {
@@ -57,12 +45,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .main-head__wrapper {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-
+@media @desktop-width {
   .main-head__caption {
     margin: 0 170px;
   }

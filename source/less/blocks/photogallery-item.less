@@ -1,24 +1,25 @@
 .photogallery-item {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: @white-color;
+  color: @black-color;
 }
 
 .photogallery-item__wrapper {
   text-align: center;
   margin: 0 auto;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 23px;
+  padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .photogallery-item__wrapper-content {
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
 .photogallery-item__caption {
-  margin-top: 12px;
+  margin-top: 15px;
   margin-bottom: 0;
   text-align: left;
   .font-caption();
@@ -37,27 +38,26 @@
 
 .photogallery-item__like-text {
   position: relative;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 0;
-  margin-left: 40px;
+  margin-left: 35px;
   text-align: left;
   .font-caption();
   font-size: 14px;
   line-height: 22px;
 }
 
-.photogallery-item__like-icon::before {
+.photogallery-item__like-icon {
   position: absolute;
   width: 23px;
   height: 20px;
-  top: -2px;
-  left: -40px;
-  display: block;
-  content: "";
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: 100%;
+  top: 37px;
+  left: -1px;
+  fill: #b2b2b2;
+}
+
+.photogallery-item__like-icon svg {
+  color: #b2b2b2;
 }
 
 .photogallery-item__image-wrapper {
@@ -69,7 +69,7 @@
   width: 100%;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
   .photogallery-item {
     background-color: @photogallery-color;
   }
@@ -78,6 +78,7 @@
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 20px;
   }
 
   .photogallery-item__wrapper-content {
@@ -87,7 +88,7 @@
   }
 
   .photogallery-item__caption {
-    margin-top: 15px;
+    margin-top: 16px;
     margin-bottom: 0;
     text-align: left;
     .font-caption();
@@ -99,13 +100,8 @@
     position: absolute;
     margin: 0;
     text-align: center;
-    top: 16px;
+    top: 14px;
     left: 270px;
-  }
-
-  .photogallery-item__like-icon::before {
-    top: -2px;
-    left: -32px;
   }
 
   .photogallery-item__image {
@@ -120,9 +116,19 @@
   .photogallery-item__like-text--big {
     left: 595px;
   }
+
+  .photogallery-item__like-icon {
+    top: -2px;
+    left: 237px;
+  }
+
+  .photogallery-item__like-icon--big {
+    top: -2px;
+    left: 562px;
+  }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
   .photogallery-item__wrapper {
     position: relative;
     padding: 0;
@@ -154,14 +160,22 @@
     left: 347px;
   }
 
-  .photogallery-item__like-icon::before {
-    top: -2px;
-    left: -35px;
-    fill: @white-color;
-  }
-
   .photogallery-item__like-text--big {
     top: 27px;
     left: 1147px;
+  }
+
+  .photogallery-item__like-icon {
+    top: 10px;
+    left: 312px;
+  }
+
+  .photogallery-item__like-icon--big {
+    top: 10px;
+    left: 1112px;
+  }
+
+  .photogallery-item__like-icon svg {
+    color: @white-color;
   }
 }

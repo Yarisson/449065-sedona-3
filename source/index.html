@@ -8,46 +8,30 @@
   </head>
   <body>
 
-      <svg style="display: none">
-          <symbol viewBox="0 0 60 60" id="academy-footer">
-            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-          </symbol>
-
-          <symbol id="youtube-footer">
-            <path fill="currentColor" stroke="currentColor" d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-          </symbol>
-
-          <symbol id="facebook-footer">
-            <path fill="currentColor" stroke="currentColor" d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
-          </symbol>
-
-          <symbol id="twitter-footer">
-            <g id="W6EeEF_1_">
-              <g>
-                <path fill="currentColor" stroke="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
-              </g>
-            </g>
-          </symbol>
-        </svg>
+    <div style="display: none">
+      <include src="build/img/sprite.svg">
+    </div>
 
 <div class="container">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <button class="page-header__button page-header__button--toggler" type="button"></button>
-        <button class="page-header__button page-header__button--cross hidden" type="button"></button>
+        <button class="page-header__button  page-header__button--cross" type="button"></button>
 
-        <nav class="main-nav hidden">
+        <nav class="main-nav">
 
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--current">Главная</li>
+            <ul class="main-nav__list  main-nav__list--left">
+                <li class="main-nav__item  main-nav__item--current"><a class="main-nav__link">Главная</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+            </ul>
+            <ul class="main-nav__list  main-nav__list--right">
                 <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
             </ul>
           </div>
+
         </nav>
-        <a class="page-header__logo logo" href="index.html">
+        <a class="page-header__logo logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -58,8 +42,8 @@
     </header>
     <main class="page-main">
 
-      <div class="main-banner main-banner--index">
-        <div class="main-banner__text main-banner__text--index">
+      <div class="main-banner  main-banner--index">
+        <div class="main-banner__text  main-banner__text--index">
         </div>
         <div class="main-banner__triangle">
         </div>
@@ -78,10 +62,10 @@
           </section>
 
           <section class="main-reason">
-            <div class="main-reason__wrapper main-reason__wrapper--triangle">
+            <div class="main-reason__wrapper  main-reason__wrapper--triangle">
               <div class="main-reason__triangle">
               </div>
-              <div class="main-reason__decoration main-reason__decoration--color main-reason__decoration--triangle">
+              <div class="main-reason__decoration  main-reason__decoration--color  main-reason__decoration--triangle">
 
                   <h2 class="main-reason__caption">Настоящий городок</h2>
                   <p class="main-reason__roster">— №1 —</p>
@@ -95,7 +79,7 @@
                   <picture>
                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.jpg.webp 2x">
+                    <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
 
                     <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
@@ -107,7 +91,7 @@
             <div class="tourist__wrapper">
               <ul class="tourist__list">
 
-              <li class="tourist__item tourist__icon tourist__icon--house">
+              <li class="tourist__item  tourist__item--house">
                 <h3 class="tourist__caption">Жилье</h3>
                 <p class="tourist__text">
                   Рекомендуем пожить в
@@ -116,7 +100,7 @@
                 </p>
               </li>
 
-              <li class="tourist__item tourist__icon tourist__icon--souvenirs">
+              <li class="tourist__item  tourist__item--souvenirs">
                 <h3 class="tourist__caption">Сувениры</h3>
                 <p class="tourist__text">
                   Не только китайского,
@@ -125,7 +109,7 @@
                 </p>
               </li>
 
-              <li class="tourist__item tourist__icon tourist__icon--food">
+              <li class="tourist__item  tourist__item--food">
                 <h3 class="tourist__caption">Еда</h3>
                 <p class="tourist__text">
                   Всегда заказывайте
@@ -141,7 +125,7 @@
             <section class="main-reason">
 
               <div class="main-reason__wrapper">
-                <div class="main-reason__decoration main-reason__decoration--color">
+                <div class="main-reason__decoration  main-reason__decoration--color">
                   <h2 class="main-reason__caption">Там есть мост дьявола</h2>
                   <p class="main-reason__roster">— №2 —</p>
                   <p class="main-reason__text">Да, по нему можно
@@ -149,7 +133,7 @@
                     конечно</p>
                   </div>
                 </div>
-                <div class="main-reason__image-wrapper main-reason__image-wrapper--position">
+                <div class="main-reason__image-wrapper  main-reason__image-wrapper--position">
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
@@ -166,14 +150,14 @@
               <section class="main-reason">
 
                 <div class="main-reason__wrapper-row">
-                <div class="main-reason__decoration main-reason__decoration--line">
+                <div class="main-reason__decoration  main-reason__decoration--line">
                     <h2 class="main-reason__caption">Небольшая площадь</h2>
                     <p class="main-reason__roster">- №3 -</p>
                     <p class="main-reason__text">Все интересные места
                       находятся очень близко</p>
                     </div>
 
-                <div class="main-reason__decoration main-reason__decoration--line">
+                <div class="main-reason__decoration  main-reason__decoration--line">
                     <h2 class="main-reason__caption">Красивая дорога</h2>
                     <p class="main-reason__roster">- №4 -</p>
                     <p class="main-reason__text">Ехать в Седону из
@@ -181,7 +165,7 @@
                       не скучно!</p>
                     </div>
 
-                <div class="main-reason__decoration main-reason__decoration--line">
+                <div class="main-reason__decoration  main-reason__decoration--line">
                     <h2 class="main-reason__caption">Мало туристов</h2>
                     <p class="main-reason__roster">- №5 -</p>
                     <p class="main-reason__text">Большинство едет в
@@ -197,10 +181,11 @@
                 <div class="hotel-interest__wrapper">
                   <h2 class="hotel-interest__caption">Заинтересовались?</h2>
                   <p class="hotel-interest__text">Укажите предполагаемые даты поездки,
-                    и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                  <button class="hotel-interest__button">Найти гостиницу</button>
-                  <div class="map">
-                  </div>
+                    и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
+                  <a class="hotel-interest__button" href="#">Найти гостиницу</a>
+                </div>
+                <div class="hotel-interest__map  hotel-interest__map--background-hidden">
+                  <iframe class="hotel-interest__map-hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1407526.6180413668!2d-112.73022162009983!3d34.9761523365599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2suk!4v1541357951692" allowfullscreen></iframe>
                 </div>
 
               </section>
@@ -213,32 +198,34 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-              <use xlink:href="#twitter-footer"></use>
-            </svg></a>
+            <a class="social__link  social__link--twitter" href="#"><svg x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve"><use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-              <use xlink:href="#facebook-footer"></use>
-            </svg></a>
+            <a class="social__link  social__link--facebook" href="#"><svg x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve"><use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-              <use xlink:href="#youtube-footer"></use>
-            </svg>
+            <a class="social__link  social__link--youtube" href="#"><svg x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve"><use xlink:href="#icon-youtube"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
 
       <p class="page-footer__copyright-text">Разработано</p>
-      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><use xlink:href="#academy-footer"></use></svg></a>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><svg viewBox="0 0 60 60"><use xlink:href="#htmlacademy"></use></svg></a>
 
       </div>
     </footer>
   </div>
 
   <script src="js/navigation.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js"></script>
+  <script src="js/map.js"></script>
 
   </body>
 </html>

@@ -15,11 +15,11 @@
 
 .social__list li:first-child {
   margin-left: auto;
-  margin-right: 5px;
+  margin-right: 0;
 }
 
 .social__list li:last-child {
-  margin-left: 5px;
+  margin-left: 0;
   margin-right: auto;
 }
 
@@ -28,23 +28,26 @@
   height: 48px;
   background-color: #81b3d2;
   padding: 0;
-  margin: 0;
+  margin: 0 5px;
 }
 
 .social__link {
   box-sizing: border-box;
   display: inline-block;
-  color: #ffffff;
+  fill: @white-color;
   margin-left: 0;
 }
 
-.social__link:hover {
-  background-color: @social__link-hover;
+.social__item:hover {
+  background-color: @social__link-hover-color;
+}
+
+.social__item:active {
+  background-color: @social__link-down-color;
 }
 
 .social__link:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: @social__link-down;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .social__link--twitter {
@@ -61,7 +64,7 @@
   padding-top: 15px;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
   .social__list {
     margin-top: -15px;
   }
